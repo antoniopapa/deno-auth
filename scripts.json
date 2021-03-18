@@ -1,0 +1,23 @@
+{
+  "$schema": "https://deno.land/x/denon/schema.json",
+  "scripts": {
+    "start": {
+      "cmd": "deno run app.ts",
+      "desc": "run my app.ts file",
+      "allow": [
+        "net",
+        "env"
+      ],
+      "env": {
+        "key": "your-secret",
+        "frontend": "http://localhost:4200"
+      }
+    }
+  },
+  "watcher": {
+    "match": [
+      "src/**/*.ts",
+      "app.ts"
+    ]
+  }
+}
